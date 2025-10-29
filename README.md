@@ -5,3 +5,9 @@ Now that I can say I'm pretty comfortable with `sklearn` at this point (despite 
 I think I'm gonna spend a lot of time with this library, so this repository will cover pretty much any and all documentation on the usage of `statsmodels` in linear regression. As usual, thank you to any who might view this (although I'm aware I'm likely typing into the void), and my god do I love learning this stuff.
 
 Here's to the next chapter of learning 🥂.
+
+**Things I forgot and need to relearn**
+* Confidence intervals.
+* T and F-statistics.
+* Adjusted R-squared
+* AIC and BIC
