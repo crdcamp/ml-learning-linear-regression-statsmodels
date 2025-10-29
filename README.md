@@ -11,3 +11,4 @@ Here's to the next chapter of learning 🥂.
 * T and F-statistics.
 * Adjusted R-squared
 * AIC and BIC
+* Need to relearn slicing
