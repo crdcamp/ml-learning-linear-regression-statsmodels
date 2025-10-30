@@ -29,3 +29,10 @@ On the other hand, **bias** refers to the error that's introduced by approximati
 As a general rule, as we use more flexible methods, the variance will increase and the bias will decrease. Don't forget that **flexibility refers to a model's "curvy-ness" when graphing the model equation**. This comes with the assumption that the model is an adequate representation of the training data.
 
 However, **at some point increasing flexibility has little impact on the bias but starts to significantly increase the variance**. When this happens the test MSE increases.
+
+# Linear Regression Statistical Measurements
+
+## Residual Sum of Squares
+
+You're already very familiar with this. It's simply the sum of the difference of all residuals resulting from the model. Let's move on.
+
