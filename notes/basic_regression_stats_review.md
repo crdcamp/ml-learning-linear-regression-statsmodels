@@ -83,3 +83,20 @@ Watch [this video](https://www.youtube.com/watch?v=2ARvj-8tJBs&t=176s) for a bet
 * The p value tells us the probability that the two datasets would have differed due to random chance under the assumption of the null hypothesis.
 * If p < 0.05 (generally speaking), you can reject the null hypothesis. This corresponds to a "95% confidence interval."
 * A t-test can be paired (you tested the same group twice) or unpaired (you tested two different groups).
+
+# Assessing the Accuracy of the Model
+
+Once we have rejected the null hypothesis, it's natural to quantify **the extent to which the model fits the data**. The quality of a linear regression fit is typically assessed using two related quantities: the **residual standard error (RSE)** and the **R^2 statistic**.
+
+## Residual Standard Error
+
+Recall that a model has error terms associated with each observation. Due to the presence of these error terms, even if we knew the true regression line, we would not be able to perfectly predict Y from X. **The RSE is an estimate of the standard deviation of the error term**. Roughly speaking, **it's the average amount that the response will deviate from the true regression line**. It's computed using the formula
+
+![Alt image](../images/rse_formula_2.png)
+
+The ∑ part of the formula is the RSS formula that was defined earlier. [Here's a good thread on why that strange subtraction of 2 is in the formula](https://www.reddit.com/r/statistics/comments/1nlsd7/can_someone_explain_why_were_always_using_terms/).
+
+**The RSE is considered a measure of the lack of fit of the model to the data**. If the predictions obtained using the model are very close to the true outcome values, then the RSE will be small, and we can conclude that the model fits the data well.
+
+## R^2 Statistic
+
