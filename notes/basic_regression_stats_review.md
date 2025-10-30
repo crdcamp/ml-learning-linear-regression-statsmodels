@@ -68,3 +68,12 @@ Mathematically, this corresponds to testing
 
 ## t-statistic
 
+The t-statistic is used in a **T test** when you are deciding if you should **support or reject the n=ull hypothesis**. There is no single formula for it, but here's the one the textbook uses
+
+![Alt image](../images/t_stat_formula.png)
+
+which measures the number of standard deviations that beta hat1 isd away from 0. If there really is no relationship between X and Y, then we expect that the above formula will have a t-distribution with n-2 degrees of freedom. The t-distribution has a bell shape and **for values of n greater than approximately 30 it's quite similar to the standard normal distribution**. Consequently, it's a simple matter to compute the probability of observing any number equal to the absolute value of t or larger in absolute value, assuming beta1 = 0. We call this probability the **p-value**.
+
+Roughly speaking, we interpret the p-value as follows: **a small p-value indicates that it's unlikely to observe such a substantial association between the predictor and the response due to chance**, in the absence of any real association between the predictor and the response. Hence, if we see a small p-value, then we can infer that there is an association between the predictor and the response. **We reject the null hypothesis** - that is, we declare a relationship to exist between X and Y - if the p-value is small enough. Typical p-value cutoffs for rejecting the null hypothesis are 5% or 1%. **When n = 30**, these correspond to t-statistics of around 2 and 2.75, respectively.
+
+Watch [this video](https://www.youtube.com/watch?v=2ARvj-8tJBs&t=176s) for a better understanding.
