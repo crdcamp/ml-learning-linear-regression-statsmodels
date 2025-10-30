@@ -44,6 +44,27 @@ Following an analogy of the estimation of the population mean µ of a random var
 
 Roughly speaking, the **standard error tells us the average amount that the estimate µ hat differs from the actual value of µ. The above equation tells us that this deviation shrinks with *n* - the more observations we have, the smaller the SE of µ hat**. We can use similar methods for estimating beta hat 0 and 1.
 
-## Residual Standard Error
+## Residual Standard Error (RSE)
 
-Same thing as SE, just concerning the residuals.
+Same thing as SE, just concerning the residuals. For the RSE formulas to be strictly valid, **we need to assume that the errors for each observation have common variance (SD^2) and are uncorrelated**. This estimate of SD is given by the formula
+
+![Alt image](../images/rse_formula.png)
+
+**Standard errors are used to compute confidence intervals**. A 95% confidence interval is defined as a range of values such that with 95% probability, the range will contain the true unknown value of the parameter. The range is defined in terms of lower and upper limits computed from the sample of data.
+
+A 95% confidence interval has the following property: if we take repeated samples and construct the confidence interval for each sample, 95% of the intervals will contain the true unknown value of the parameter.
+
+**Standard errors can also be used to perform hypothesis tests on the coefficients**. The most common hypothesis test involves testing the **null hypothesis of
+
+H0: There is no relationship between X and Y
+
+versus the alternative hypothesis
+
+Ha: There is some relationship between X and Y.
+
+Mathematically, this corresponds to testing
+
+![Alt image](../images/hypothesis_test.png)
+
+## t-statistic
+
