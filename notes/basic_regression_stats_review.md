@@ -32,7 +32,18 @@ However, **at some point increasing flexibility has little impact on the bias bu
 
 # Linear Regression Statistical Measurements
 
-## Residual Sum of Squares
+## Residual Sum of Squares (RSS)
 
 You're already very familiar with this. It's simply the sum of the difference of all residuals resulting from the model. Let's move on.
 
+## Standard Error (SE)
+
+Following an analogy of the estimation of the population mean µ of a random variable Y. A natural question is as follows: how accurate is the sample mean µ hat as an estimate of µ? The average of µ hats over many data sets will be very close to µ, but a single estimate of µ hate may be a substantial under or overestimate of µ. How far off will that single estimate of µ hat be? In general, we answer this question by computing the **standard error of µ hat**. We have the formula
+
+![Alt image](../images/se_formula.png)
+
+Roughly speaking, the **standard error tells us the average amount that the estimate µ hat differs from the actual value of µ. The above equation tells us that this deviation shrinks with *n* - the more observations we have, the smaller the SE of µ hat**. We can use similar methods for estimating beta hat 0 and 1.
+
+## Residual Standard Error
+
+Same thing as SE, just concerning the residuals.
