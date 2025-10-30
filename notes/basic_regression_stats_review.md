@@ -77,3 +77,9 @@ which measures the number of standard deviations that beta hat1 isd away from 0.
 Roughly speaking, we interpret the p-value as follows: **a small p-value indicates that it's unlikely to observe such a substantial association between the predictor and the response due to chance**, in the absence of any real association between the predictor and the response. Hence, if we see a small p-value, then we can infer that there is an association between the predictor and the response. **We reject the null hypothesis** - that is, we declare a relationship to exist between X and Y - if the p-value is small enough. Typical p-value cutoffs for rejecting the null hypothesis are 5% or 1%. **When n = 30**, these correspond to t-statistics of around 2 and 2.75, respectively.
 
 Watch [this video](https://www.youtube.com/watch?v=2ARvj-8tJBs&t=176s) for a better understanding.
+
+**Summary**
+* A t-test (1) assumes the null hypothesis is true and then (2) evaluates whether that is a bad assumption.
+* The p value tells us the probability that the two datasets would have differed due to random chance under the assumption of the null hypothesis.
+* If p < 0.05 (generally speaking), you can reject the null hypothesis. This corresponds to a "95% confidence interval."
+* A t-test can be paired (you tested the same group twice) or unpaired (you tested two different groups).
