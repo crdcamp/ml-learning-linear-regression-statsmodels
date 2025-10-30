@@ -100,3 +100,14 @@ The ∑ part of the formula is the RSS formula that was defined earlier. [Here's
 
 ## R^2 Statistic
 
+The RSE provides an absolute measure of lack of fit of the model to the data. But since it's measured in units of Y, it's not always clear what constitutes a good RSE. The R^2 statistic provides an alternative measure of fit. It takes the form of a **proportion - the proportion of variance explained** - and so it always takes on a value between 0 and 1, and is **independent of the scale of Y**.
+
+Here's the formula:
+
+![Alt image](../images/r_squared_formula.png)
+
+**TSS is the total sum of squares, and measures the total variance in the response Y, and can be thought of as the amount of variability inherent in the response before the regression is performed. In contrast, RSS measures the amount of variability that is left unexplained after performing the regression. Hence, TSS - RSS measures the amount of variability in the response that is explained (or removed) by performing the regression, and R^2 measures the proportion of variability in Y that can be explained using X.**
+
+The R^2 statistic has an interpretational advantage over the RSE, since unlike the RSE, it always lies between 0 and 1. However, it can still be challenging what is a *good* R^2 value, and in general this will depend on the application.
+
+Now let's get back to `statsmodels`.
