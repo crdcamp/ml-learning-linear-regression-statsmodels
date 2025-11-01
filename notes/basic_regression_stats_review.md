@@ -110,4 +110,21 @@ Here's the formula:
 
 The R^2 statistic has an interpretational advantage over the RSE, since unlike the RSE, it always lies between 0 and 1. However, it can still be challenging what is a *good* R^2 value, and in general this will depend on the application.
 
-Now let's get back to `statsmodels`.
+# F-statistic
+
+In a multiple regression setting with *p* predictors, we need to ask whether all of the regression coefficients are zero. As in the simple linear regression setting, we use a hypothesis test to answer this question. **This hypothesis test is performed by computing the F-statistic**
+
+![Alt image](../images/f_statistic.png)
+
+If the alternative hypothesis is true, then we expect F to be greater than 1. A large F statistic suggests that at least one of the features must be related to the target. However, what if the F-statistic had been closer to 1? How large does the F-statistic need to be before we can reject the null hypothesis and conclude that there is a relationship? It turns out that the answer **depends on the values of n and p**. When n is large, an F-statistic that is just a little larger than 1 might still provide evidence against the null. In contrast, a larger F-statistic is needed to reject the null if n is small.
+
+When the null hypothesis is true, and the errors have a normal distribution, the F-statistic follows an **F-distribution**. For any given value of n and p, any statistical software package can be used to compute the p-value associated with the F-statistic using this distribution. Based on this p-value, we can determine whether or not the reject H0.
+
+# Linear Model Selection and Regularization
+
+There are many alternatives to using least squares to fit. Here are the three we will be discussing:
+* **Subset Selection:** Involves identifying a subset of the *p* predictors that we believe to be related to the response. We then fit a model using least squares on the reduced set of variables.
+* **Shrinkage:** Involves fitting a model on all *p* predictors. However, the estimated coefficients are shrunken towards zero relative to the least squares estimated. This is **regularization**, and has the effect of reducing variance.
+* **Dimension Reduction:** Involves **projecting** the *p* predictors into an *M*-dimensional subspace, where *M* < *p*. This is achieved by computing *M* different linear combinations, or projections, of the variables. These projections are used as predictors to fit a linear regression model by least squares (such as PCA).
+
+**AIC and BIC start on page 244. I'm just gonna spend time reading directly from the textbook instead of making notes since this is taking up too much time.**
