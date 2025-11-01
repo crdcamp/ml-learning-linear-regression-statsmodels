@@ -112,6 +112,8 @@ The R^2 statistic has an interpretational advantage over the RSE, since unlike t
 
 # F-statistic
 
+[Watch this video](https://www.youtube.com/watch?v=ie-MYQp1Nic&t=10s)
+
 In a multiple regression setting with *p* predictors, we need to ask whether all of the regression coefficients are zero. As in the simple linear regression setting, we use a hypothesis test to answer this question. **This hypothesis test is performed by computing the F-statistic**
 
 ![Alt image](../images/f_statistic.png)
