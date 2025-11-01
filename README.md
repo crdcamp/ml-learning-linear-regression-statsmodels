@@ -6,7 +6,7 @@ I think I'm gonna spend a lot of time with this library, so this repository will
 
 Here's to the next chapter of learning 🥂.
 
-**Things I forgot and need to relearn**
+**Things I forgot and need to relearn (not for you, potential viewer)**
 * Confidence intervals.
 * T and F-statistics.
 * Adjusted R-squared
