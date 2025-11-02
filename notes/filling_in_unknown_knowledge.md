@@ -20,7 +20,13 @@ Then the ith (unstandardized) deleted residual is defined as:
 
 di=yi−ŷ (i)
 
+Data point i being influential implies that the data point "pulls" the estimated regression line towards itself. In that case, the observed response would be close to the predicted response. But, if you removed the influential data point from the data set, then the estimated regression line would "bounce back" away from the observed response, thereby resulting in a large deleted residual. That is, a data point having a large deleted residual suggests that the data point is influential
 
+Consider the plot of n = 4 data points (3 blue and 1 red):
+
+![Alt image](../images/standardized_resid_example.png)
+
+The solid line represents the estimated regression line for all four data points, while the dashed line represents the estimated regression line for the data set containing just the three data points - with the red data point omitted. Observe that, as expected, the red data point "pulls" the estimated regression line towards it. When the red data point is omitted, the estimated regression line "bounces back" away from the point.
 
 # Influence Plots
 
