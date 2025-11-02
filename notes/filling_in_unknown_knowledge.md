@@ -10,6 +10,18 @@ As of now, these aren't in any particular order. Just filling in the gaps.
 
 When trying to identify outliers, one problem that can arise is when there is a potential outlier that influences the regression model to such and extent that the estimated regression function is "pulled" towards the potential outlier, so that it isn't flagged as an outlier using the standardized residual criterion. To address this issue, studentized residuals offer an alternative criterion for identifying outliers. **The basic idea is to delete the observations one at a time, each time refitting the regression model on the remaining n-1 observations. Then, we compare the observed response values to their fitted values based on the models with the ith observation deleted**. This produces **deleted residuals**. Standardizing the deleted residuals produces studentized residuals.
 
+## Deleted residuals
+
+If we let:
+* yi denote the observed response for the ith observation, and
+* y hat(i) denote the predicted response for the ith observation based on the estimated model with the ith observation deleted
+
+Then the ith (unstandardized) deleted residual is defined as:
+
+di=yi−ŷ (i)
+
+
+
 # Influence Plots
 
 # Confidence Intervals
