@@ -28,7 +28,17 @@ Consider the plot of n = 4 data points (3 blue and 1 red):
 
 The solid line represents the estimated regression line for all four data points, while the dashed line represents the estimated regression line for the data set containing just the three data points - with the red data point omitted. Observe that, as expected, the red data point "pulls" the estimated regression line towards it. When the red data point is omitted, the estimated regression line "bounces back" away from the point.
 
+However, the question of "how large is large" in terms of the outlier's influence comes into play here. We can solve the problem of answering this question by dividing each deleted residual by an estimate of its standard deviation. That's where studentized residuals come into play.
+
+## Studentized residuals
+
+A studentized residual is simply a deleted residual divided by its estimated standard deviation. This turns out to be equal to the ordinary residual divided by a factor that includes the mean square error based on the estimated model with the ith observation deleted, MSE(i), and the leverage hii.
+
+In general, studentized residuals are going to be more effective for detecting outlying Y observations than standardized residuals. If an observation has a studentized residual that's larger than 3 (in absolute value) we can call it an outlier. The studentized residuals in R are denoted as `TRES`.
+
 # Influence Plots
+
+
 
 # Confidence Intervals
 
