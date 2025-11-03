@@ -40,6 +40,8 @@ In general, studentized residuals are going to be more effective for detecting o
 
 # Degrees of Freedom
 
+# Leverage
+
 # Confidence Intervals
 
 # Kurtosis
