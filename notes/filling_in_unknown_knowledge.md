@@ -1,9 +1,3 @@
-As of now, these aren't in any particular order. Just filling in the gaps.
-
-# Partial Regression Plots
-
-[Refer to this resource](https://www.youtube.com/watch?v=-eLEpMZKNDc)
-
 # Studentized Residuals
 
 [Resource](https://online.stat.psu.edu/stat462/node/247/)
@@ -36,22 +30,33 @@ A studentized residual is simply a deleted residual divided by its estimated sta
 
 In general, studentized residuals are going to be more effective for detecting outlying Y observations than standardized residuals. If an observation has a studentized residual that's larger than 3 (in absolute value) we can call it an outlier. The studentized residuals in R are denoted as `TRES`.
 
-# Influence Plots
+## Influence Plots
 
 # Degrees of Freedom
 
 **It's actually pretty simple**. It's how many independent variables of information you needed to make a calculation.
 
-# Leverage
+# Analytics Statistics
 
-# Confidence Intervals
+## t-stat
 
-# Kurtosis
+## Durbin Watson
 
-# CCPR Plots
+# Plotting Topics
 
-# Leverage-Resid2 Plot
+## Partial Regression Plots
 
-# Influence Plots
+[Refer to this resource](https://www.youtube.com/watch?v=-eLEpMZKNDc)
 
-# Robust Regression to Correct for Outliers
+## CCPR Plots
+
+## Leverage-Resid2 Plot
+
+## Kurtosis
+
+## Influence Plots
+
+# TBD
+* Confidence Intervals
+* Robust Regression to Correct for Outliers
+* Leverage
