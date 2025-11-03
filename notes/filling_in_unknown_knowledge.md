@@ -38,7 +38,7 @@ In general, studentized residuals are going to be more effective for detecting o
 
 # Influence Plots
 
-
+# Degrees of Freedom
 
 # Confidence Intervals
 
