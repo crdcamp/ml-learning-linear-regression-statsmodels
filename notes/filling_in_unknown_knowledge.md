@@ -40,6 +40,8 @@ In general, studentized residuals are going to be more effective for detecting o
 
 # Degrees of Freedom
 
+**It's actually pretty simple**. It's how many independent variables of information you needed to make a calculation.
+
 # Leverage
 
 # Confidence Intervals
