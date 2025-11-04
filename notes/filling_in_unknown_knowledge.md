@@ -56,6 +56,45 @@ In general, studentized residuals are going to be more effective for detecting o
 
 ## Influence Plots
 
+# Ridge and Lasso Method with statsmodels
+
+## Method Argument
+- `method='elastic_net'` - This is the only real option for ridge/lasso
+
+## Getting Ridge vs Lasso
+Control the regularization type using the `L1_wt` parameter:
+
+- **Ridge**: `L1_wt=0`
+- **Lasso**: `L1_wt=1`
+- **Elastic Net**: `0 < L1_wt < 1`
+
+## Why This Works
+Elastic net uses a combined penalty term:
+
+**Penalty = α × [L1_wt × |β| + (1 - L1_wt) × β²]**
+
+Where:
+- `L1_wt` controls the mix between L1 (lasso) and L2 (ridge)
+- `alpha` controls overall regularization strength
+
+Ridge and lasso are just special cases of elastic net:
+- `L1_wt=0` → penalty = β² (L2 only) → Ridge
+- `L1_wt=1` → penalty = |β| (L1 only) → Lasso
+
+## Example Usage
+```python
+# Ridge regression
+model.fit_regularized(method='elastic_net', alpha=1.0, L1_wt=0)
+
+# Lasso regression
+model.fit_regularized(method='elastic_net', alpha=1.0, L1_wt=1)
+
+# Elastic net
+model.fit_regularized(method='elastic_net', alpha=1.0, L1_wt=0.5)
+```
+
+# Elastic Net
+
 # TBD
 * Confidence Intervals
 * Robust Regression to Correct for Outliers
